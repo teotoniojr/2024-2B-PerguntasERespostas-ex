@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --black: #011627ff;
+    --white: #fdfffcff;
+    --grey: #2ec4b6ff;
+    --grey2:rgb(39, 162, 150)f;
+    --red: #e71d36ff;
+    --orange: #ff9f1cff;
+    --font-title: "Edu AU VIC WA NT Guides", serif;
+    --font-text: "DM Sans", serif;
+}
+
+body{
+    font-family: var(--font-text);
+    background-image: url('img/34386132_182428240217.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 100vh;
+    color: var(--black);
+}
+
+#container{
+    display: flex;
+}
+
+.card{
+    margin: 1rem 1rem;
+    background-color: var(--grey);
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.card__content{
+    height: 100%;
+    text-align: center;
+}
+
+.card__content h3{
+    border: 3px solid var(--black);
+    font-family: var(--font-title);
+    text-align: left;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius:0.6rem;
+    font-size: 1.5vw;
+}
+
+.card__content p {
+    margin: 1rem;
+    padding: 2rem;
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--black);
+}
+
+footer p{
+    color: var(--white);
+    font-size: 0.9rem;
+    margin: 0.8rem 0 1.2rem 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--orange);
+}
